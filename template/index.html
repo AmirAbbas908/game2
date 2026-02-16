@@ -165,12 +165,12 @@ https://persian-theme.com
         <div class="col-lg-3 col-md-6">
           <div class="item">
             <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/trending-01.jpg" alt=""></a>
-              <span class="price"><em>35,000</em>20,000</span>
+              <a href="product-details.html"><img src="{{ popular_game.image.url }}" alt="{{ popular_game.name }}"></a>
+              <span class="price"><em>{{popular_game.old_price }}</em>{{popular_game.price}}</span>
             </div>
             <div class="down-content">
-              <span class="category">اکشن</span>
-              <h4>قاتلان عقیده</h4>
+              <span class="category">{{popular_game.category}}</span>
+              <h4>{{popular_game.title}}</h4>
               <a href="product-details.html"><i class="fa fa-shopping-bag"></i></a>
             </div>
           </div>

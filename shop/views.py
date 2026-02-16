@@ -5,4 +5,4 @@ def index_view(request):
     context = {
         'popular_games':Product.objects.all()
     }
-    return render(request,"index.html")
+    return render(request,"index.html",context)
