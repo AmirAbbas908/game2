@@ -152,8 +152,8 @@ https://persian-theme.com
       <div class="row">
         <div class="col-lg-6">
           <div class="section-heading">
-            <h6>پرطرفدار</h6>
-            <h2>بازی های پرطرفدار</h2>
+            <h6>محصولات</h6>
+            <h2>محصولات</h2>
           </div>
         </div>
         <div class="col-lg-6">
@@ -195,80 +195,20 @@ https://persian-theme.com
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
+       {% for game in most_played %}   
+       <div class="item">
             <div class="thumb">
               <a href="product-details.html"><img src="assets/images/top-game-01.jpg" alt=""></a>
             </div>
             <div class="down-content">
                 <span class="category">ماجرا</span>
                 <h4>قاتلان عقیده</h4>
-                <a href="product-details.html">کاوش کنید</a>
+                <a href="{% url 'product_detail' product.id %}">کاوش کنید</a>
             </div>
           </div>
         </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-02.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-              <span class="category">ماجرا</span>
-              <h4>قاتلان عقیده</h4>
-              <a href="product-details.html">کاوش کنید</a>
-          </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-03.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-              <span class="category">ماجرا</span>
-              <h4>قاتلان عقیده</h4>
-              <a href="product-details.html">کاوش کنید</a>
-          </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-04.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-              <span class="category">ماجرا</span>
-              <h4>قاتلان عقیده</h4>
-              <a href="product-details.html">کاوش کنید</a>
-          </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-05.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-              <span class="category">ماجرا</span>
-              <h4>قاتلان عقیده</h4>
-              <a href="product-details.html">کاوش کنید</a>
-          </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-6 col-sm-6">
-          <div class="item">
-            <div class="thumb">
-              <a href="product-details.html"><img src="assets/images/top-game-06.jpg" alt=""></a>
-            </div>
-            <div class="down-content">
-              <span class="category">ماجرا</span>
-              <h4>قاتلان عقیده</h4>
-              <a href="product-details.html">کاوش کنید</a>
-          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        {% endfor %}
+        
 
   <div class="section categories">
     <div class="container">

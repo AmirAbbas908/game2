@@ -13,6 +13,7 @@ class Product(models.Model):
     old_price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
     image = models.ImageField(upload_to="products/")
+    play_count = models.PositiveIntegerField(default=0) 
     
 
     def __str__(self):
